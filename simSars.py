@@ -96,7 +96,7 @@ population['Total'] = S+E+A+I+H+G+R+V+FV+D
 
 which = st.sidebar.multiselect('Datos para visualizar:',['Susceptibles','Expuestos','Asintomáticos','Infectados',
 'Hospitalizados','Graves','Recuperados','Vacunados','No Generan Inmunidad','Fallecidos',
-'Incidencia','Total de Casos','Total de Muertes por Covid-19',
+'Incidencia','Total de Casos','Total de Muertes por Covid-19','Tiempo de Inmunidad',
 'Total de Vacunados','Total'],default=['Total','Recuperados','Fallecidos','Asintomáticos','Infectados','Expuestos'])
 if st.selectbox('Tipo de Gráfico',('Linea','Area'))=='Area':
     st.area_chart(population[which])
